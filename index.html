@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src='js/jquery-1.12.1.min.js'></script>
+    <script type="text/javascript" src='js/scripts.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/jumbotron-narrow.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+
+    <title>nlpdx</title>
+  </head>
+  <body>
+
+   <div class="container">
+     <div class="header clearfix">
+       <nav>
+         <ul class="nav nav-pills pull-right">
+           <li role="presentation" class='reset'><a href="#">reset</a></li>
+         </ul>
+       </nav>
+       <h3 class="text-muted">pdx nitelife</h3>
+     </div>
+
+     <div class="jumbotron">
+
+       <button id='begin' type="button" class="btn-lg btn-default btn-circle">
+         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+       </button>
+
+     </div>
+
+     <div id='map'></div>
+
+<!-- north & drink buttons -->
+
+     <div class="row compass">
+
+       <div class='col-md-1 hid'>
+         <button id='north' type="button" class="btn btn-default btn-circle">n</button>
+       </div>
+
+       <div class='col-md-offset-1 col-md-1 hid' id='divnorth'>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid'>
+         <button id='drink' type="button" class="btn btn-default btn-circle">
+          <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+         </button>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid' id='divdrink'>
+       </div>
+
+     </div>
+
+<!-- south & dance button -->
+     <div class="row compass">
+
+       <div class='col-md-1 hid'>
+         <button id='south' type="button" class="btn btn-default btn-circle">s</button>
+       </div>
+
+       <div class='col-md-offset-1 col-md-1 hid' id='divsouth'>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid'>
+         <button id='dance' type="button" class="btn btn-default btn-circle">
+          <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+         </button>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid' id='divdance'>
+       </div>
+
+     </div>
+
+<!-- east & date button -->
+     <div class="row compass">
+
+       <div class='col-md-1 hid'>
+         <button id='east' type="button" class="btn btn-default btn-circle">e</button>
+       </div>
+
+       <div class='col-md-offset-1 col-md-1 hid' id='diveast'>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid'>
+         <button id='date' type="button" class="btn btn-default btn-circle">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+         </button>
+       </div>
+
+       <div class='col-md-offset-3 col-md-1 hid' id='divdate'>
+       </div>
+
+     </div>
+
+<!-- west button -->
+          <div class="row compass">
+
+            <div class='col-md-1 hid'>
+              <button id='west' type="button" class="btn btn-default btn-circle">w</button>
+            </div>
+
+            <div class='col-md-offset-1 col-md-1 hid' id='divwest'>
+            </div>
+
+            <div class='col-md-offset-3 col-md-1 hid'>
+              <button id='search' type="button" class="btn btn-default btn-circle">
+               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+            </div>
+
+          </div>
+
+
+     <footer class="footer">
+       <p>&copy; 2016 demep</p>
+     </footer>
+
+   </div>
+
+</html>
