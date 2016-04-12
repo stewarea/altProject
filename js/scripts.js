@@ -1,4 +1,4 @@
-var qArray = ['portland oregon'];
+var qArray = ['portland oregon', 'pdx'];
 
 $(function () {
 
@@ -62,7 +62,7 @@ $('#search').click(function (event) {
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
 	 $('.btn').css('background-color', '#FFFFFF');
-	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').delay(500).empty().css('background-color', 'none');
-	 qArray = ['portland oregon'];
+	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').delay(500).empty().css('color', 'gray');
+	 qArray = ['portland oregon', 'pdx'];
 	});
 });
