@@ -2,12 +2,35 @@ var qArray = ['portland oregon', 'pdx'];
 
 $(function () {
 
+	var timeoutID;
+
+	function firstAlert() {
+	  timeoutID = window.setTimeout(helpOutplay, 5000);
+	};
+
+	function helpOutplay() {
+	  	$('#helpplay').fadeIn(500);
+	};
+
+	function helpOutselect() {
+		$('#helpselect').fadeIn(500);
+	};
+
+	function secondAlert() {
+		timeoutID = window.setTimeout(helpOutselect, 5000);
+	};
+
+	firstAlert();
+
 	$('#begin').click(function (event) {
 		event.preventDefault();
 
+		$('#helpplay').fadeOut(250);
 		$('.footer').fadeOut(500);
 		$('.jumbotron').fadeOut(1000);
 		$('.hid').delay(1000).slideDown(1000);
+		window.clearTimeout(timeoutID);
+		secondAlert();
 	});
 
  $('.btn-select').mouseenter(function (event) {
@@ -33,6 +56,8 @@ $('.btn-select').click(function (event) {
 			$('#div' + this.id).css('color', 'rgb(121, 204, 94)');
 			if (this.id !== 'search') {
 			qArray.push(this.id);
+			window.clearTimeout(timeoutID);
+	 	 $('#helpselect').fadeOut(250);
 		};
 
 		} else {
@@ -67,4 +92,6 @@ $('#search').click(function (event) {
 	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').delay(500).empty().css('color', 'gray');
 	 qArray = ['portland oregon', 'pdx'];
 	});
+
+
 });

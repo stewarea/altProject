@@ -71,3 +71,11 @@ div #divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate {
 	margin-right: 10%;
 	display: none;
 }
+
+#helpplay {
+	display: none;
+}
+
+#helpselect {
+	display: none;
+}
