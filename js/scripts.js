@@ -62,7 +62,7 @@ $('#search').click(function (event) {
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
 	 $('.btn').css('background-color', '#FFFFFF');
-	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate').empty();
+	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').empty();
 	 qArray = ['portland oregon'];
 	});
 });
