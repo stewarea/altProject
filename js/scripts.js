@@ -25,7 +25,7 @@ $(function () {
 		};
 });
 
-$('.btn').click(function (event) {
+$('.btn-select').click(function (event) {
 	event.preventDefault();
 
 		if ($(this).css('background-color') !==  'rgb(121, 204, 94)') {
