@@ -59,7 +59,7 @@ body {
 	border-style: solid;
 }
 
-div #divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate {
+div #divnorth, #divsouth, #diveast, #divwest, #diveat, #divdance, #divdrink{
 	display: none;
 	position: absolute;
 	text-align: left;
