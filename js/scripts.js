@@ -34,7 +34,7 @@ $('.btn').click(function (event) {
 			qArray.push(this.id);
 
 		} else {
-			$(this).css('background-color',  'rgb(255, 255, 255)');
+			$(this).css('background-color', 'rgb(255, 255, 255)');
 			$('#div' + this.id).css('color', 'gray');
 
 			var index = qArray.indexOf(this.id);
@@ -47,10 +47,10 @@ $('.btn').click(function (event) {
 $('#search').click(function (event) {
 	event.preventDefault();
 
-	$('.hid').delay(500).slideUp();
-	$('#map').append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=' +
+	$('.hid').slideUp();
+	$('#map').delay(500).append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=' +
 	qArray.join(' ') +
-	'&key=AIzaSyC-u-zGtcSYGbK84Yxq9a_cY76NyKvHoVs" allowfullscreen></iframe>').fadeIn(500);
+	'&key=AIzaSyC-u-zGtcSYGbK84Yxq9a_cY76NyKvHoVs&zoom=12" allowfullscreen></iframe>').fadeIn(500);
 });
 
  $('.reset').click(function (event) {
@@ -62,7 +62,7 @@ $('#search').click(function (event) {
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
 	 $('.btn').css('background-color', '#FFFFFF');
-	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').empty();
+	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').delay(500).empty().css('background-color', 'none');
 	 qArray = ['portland oregon'];
 	});
 });
