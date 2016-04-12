@@ -10,7 +10,7 @@ $(function () {
 		$('.hid').delay(1000).slideDown(1000);
 	});
 
- $('.btn-circle').mouseenter(function (event) {
+ $('.btn-select').mouseenter(function (event) {
 	 event.preventDefault();
 
 	 $('#div' + this.id).empty();
@@ -31,7 +31,9 @@ $('.btn-select').click(function (event) {
 		if ($(this).css('background-color') !==  'rgb(121, 204, 94)') {
 			$(this).css('background-color',  'rgb(121, 204, 94)');
 			$('#div' + this.id).css('color', 'rgb(121, 204, 94)');
+			if (this.id !== 'search') {
 			qArray.push(this.id);
+		};
 
 		} else {
 			$(this).css('background-color', 'rgb(255, 255, 255)');
@@ -61,7 +63,7 @@ $('#search').click(function (event) {
 	 $('.footer').fadeOut(1000);
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
-	 $('.btn').css('background-color', '#FFFFFF');
+	 $('.btn-select').css('background-color', '#FFFFFF');
 	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdate, #map').delay(500).empty().css('color', 'gray');
 	 qArray = ['portland oregon', 'pdx'];
 	});
