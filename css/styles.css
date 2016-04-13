@@ -1,3 +1,7 @@
+/*****************
+LINK STYLES
+*****************/
+
 a {
 	color: black;
 }
@@ -7,31 +11,17 @@ a:hover {
 	text-decoration: none;
 }
 
-.hid {
-	display: none;
-}
+/*****************
+BODY STYLES
+*****************/
 
 body {
 	margin:40px;
 }
 
-/*.compass {
-	padding-right: 15px;
-  padding-left: 15px;
-	margin: 40px 0;
-}*/
-/*.compass p + h4 {
-  margin-bottom: 28px;
-}*/
-
-.compass {
-	margin: 15px 0;
-	/*margin-left: 33%*/
-}
-
-.compasslabel {
-	font-weight: bold;
-}
+/*****************
+BUTTON STYLES
+*****************/
 
 .btn-circle {
   width: 30px;
@@ -59,6 +49,28 @@ body {
 	border-style: solid;
 }
 
+/*****************
+ROW STYLES
+*****************/
+
+.compass {
+	margin: 15px 0;
+}
+
+.compasslabel {
+	font-weight: bold;
+}
+
+
+/*****************
+DIV STYLES
+*****************/
+
+
+.hid {
+	display: none;
+}
+
 div #divnorth, #divsouth, #diveast, #divwest, #diveat, #divdance, #divdrink{
 	display: none;
 	position: absolute;
@@ -72,10 +84,8 @@ div #divnorth, #divsouth, #diveast, #divwest, #diveat, #divdance, #divdrink{
 	display: none;
 }
 
-#helpplay {
+#helpplay, #helpselect {
+	text-align: center;
 	display: none;
-}
-
-#helpselect {
-	display: none;
+	margin: 15px auto;
 }

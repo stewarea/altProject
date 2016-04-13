@@ -12,6 +12,8 @@
   </head>
   <body>
 
+    <!--TITLE & RESET HEADER -->
+
    <div class="container">
      <div class="header clearfix">
        <nav>
@@ -22,6 +24,8 @@
        <h3 class="text-muted">pdx nitelife</h3>
      </div>
 
+     <!--PLAY BUTTON/JUMBOTRON -->
+
      <div class="jumbotron">
 
        <button id='begin' type="button" class="btn-lg btn-default btn-circle">
@@ -30,9 +34,11 @@
 
      </div>
 
+     <!--MAP DIV -->
+
      <div id='map'></div>
 
-<!-- north & drink buttons -->
+     <!--SELECT BUTTONS -->
 
      <div class="row compass">
 
@@ -54,7 +60,7 @@
 
      </div>
 
-<!-- south & dance button -->
+
      <div class="row compass">
 
        <div class='col-md-1 hid'>
@@ -75,7 +81,7 @@
 
      </div>
 
-<!-- east & date button -->
+
      <div class="row compass">
 
        <div class='col-md-1 hid'>
@@ -96,38 +102,37 @@
 
      </div>
 
-<!-- west button -->
-          <div class="row compass">
 
-            <div class='col-md-1 hid'>
-              <span class='compasslabel'><button id='west' type="button" class="btn-lg btn-default btn-circle btn-select">W</button></span>
-            </div>
+     <div class="row compass">
 
-            <div class='col-md-offset-1 col-md-1 hid' id='divwest'>
-            </div>
+     <div class='col-md-1 hid'>
+       <span class='compasslabel'><button id='west' type="button" class="btn-lg btn-default btn-circle btn-select">W</button></span>
+     </div>
 
-            <div class='col-md-offset-3 col-md-1 hid'>
-              <button id='search' type="button" class="btn-lg btn-default btn-circle btn-select">
-               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </div>
+     <div class='col-md-offset-1 col-md-1 hid' id='divwest'>
+     </div>
 
-          </div>
+     <div class='col-md-offset-3 col-md-1 hid'>
+       <button id='search' type="button" class="btn-lg btn-default btn-circle btn-select">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+       </button>
+     </div>
 
-        <div id='helpplay'>
-          <p>
-            &nbsp;click <span class="glyphicon glyphicon-play" aria-hidden="true">
-          </p>
-        </div>
-        <div id='helpselect'>
-          <p>
-            &nbsp;select from N S E W then<span class="glyphicon glyphicon-glass" aria-hidden="true"></span>&nbsp;<span class="glyphicon glyphicon-volume-up" aria-hidden="true"> </span>&nbsp;<span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>&nbsp;and then&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          </p>
-        </div>
-     <!-- <footer class="footer">
-       <p>&copy; 2016 demep</p>
-     </footer> -->
+    </div>
+
+   <!--ALERT DIVS -->
+
+    <div id='helpplay'>
+     <p>
+       &nbsp;click <span class="glyphicon glyphicon-play" aria-hidden="true">
+     </p>
+     </div>
+    <div id='helpselect'>
+     <p>
+      &nbsp;select from N S E W then<span class="glyphicon glyphicon-glass" aria-hidden="true"></span>&nbsp;<span class="glyphicon glyphicon-volume-up" aria-hidden="true"> </span>&nbsp;<span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>&nbsp;and then&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+     </p>
+    </div>
 
    </div>
-
-</html>
+  </body>
+ </html>
