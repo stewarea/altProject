@@ -66,6 +66,11 @@ ROW STYLES
 DIV STYLES
 *****************/
 
+.center {
+	float: none;
+	margin: 0 auto;
+}
+
 
 .hid {
 	display: none;

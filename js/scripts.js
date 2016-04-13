@@ -1,3 +1,6 @@
+/* Format function adds some additional words to selections made by the user
+in order to provide a more robust search.*/
+
 function format(arr) {
 	if (qArray.indexOf('dine') > -1) {
 		qArray.push('restaurant');
@@ -7,7 +10,7 @@ function format(arr) {
 	};
 	if (qArray.indexOf('drink') > -1) {
 		qArray.push('bar dive cocktails');
-	};	
+	};
 };
 
 
@@ -84,20 +87,20 @@ $(function () {
 	not green, the text created by the mouse being over the button will fade out.
 	*****************/
 
- $('.btn-select').mouseenter(function (event) {
-	 event.preventDefault();
+	 $('.btn-select').mouseenter(function (event) {
+		 event.preventDefault();
 
-	 $('#div' + this.id).empty();
-	 $('#div' + this.id).append('<h4>' + this.id + '</h4>').fadeIn(500);
- })
+		 $('#div' + this.id).empty();
+		 $('#div' + this.id).append('<h4>' + this.id + '</h4>').fadeIn(500);
+	 })
 
- .mouseleave(function (event) {
-	 event.preventDefault();
+	 .mouseleave(function (event) {
+		 event.preventDefault();
 
-	 	if ($(this).css('background-color') != 'rgb(121, 204, 94)' ) {
-			$('#div' + this.id).fadeOut(500);
-		};
-});
+		 	if ($(this).css('background-color') != 'rgb(121, 204, 94)' ) {
+				$('#div' + this.id).fadeOut(500);
+			};
+	});
 
 /*****************
 If a button is clicked with the class btn-select a few things happen:
@@ -113,8 +116,8 @@ as an element.
 The alert timer is cleared, and the div which is activated by secondAlert fades out.
 *****************/
 
-$('.btn-select').click(function (event) {
-	event.preventDefault();
+	$('.btn-select').click(function (event) {
+		event.preventDefault();
 
 		if ($(this).css('background-color') !==  'rgb(121, 204, 94)') {
 			$(this).css('background-color',  'rgb(121, 204, 94)');
@@ -144,7 +147,7 @@ $('.btn-select').click(function (event) {
 					qArray.splice(index, 1);
 				};
 		};
-});
+	});
 
 /*****************
 When the button with the search icon is clicked, the #map div is appended
@@ -153,15 +156,15 @@ in such a way that they become the keywords of a search.
 *****************/
 
 
-$('#search').click(function (event) {
-	event.preventDefault();
+	$('#search').click(function (event) {
+		event.preventDefault();
 
-	format(qArray);
-	$('.hid').slideUp();
-	$('#map').delay(500).append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=' +
-	qArray.join(' ') +
-	'&key=AIzaSyC-u-zGtcSYGbK84Yxq9a_cY76NyKvHoVs&zoom=12" allowfullscreen></iframe>').fadeIn(500);
-});
+		format(qArray);
+		$('.hid').slideUp();
+		$('#map').delay(500).append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=' +
+		qArray.join(' ') +
+		'&key=AIzaSyC-u-zGtcSYGbK84Yxq9a_cY76NyKvHoVs&zoom=12" allowfullscreen></iframe>').fadeIn(500);
+	});
 
 /*****************
 When reset is clicked, all divs visible outside of the header are faded out or slide up.
@@ -186,6 +189,6 @@ qArray is set back to its default contents.
 	 $('#helpplay').hide().append('&nbsp;click <span class="glyphicon glyphicon-play" aria-hidden="true">');
 	 firstAlert();
 	 qArray = ['portland oregon'];
-	});
+	 });
 
 });
