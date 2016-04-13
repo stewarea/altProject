@@ -71,7 +71,7 @@ DIV STYLES
 	display: none;
 }
 
-div #divnorth, #divsouth, #diveast, #divwest, #diveat, #divdance, #divdrink{
+div #divnorth, #divsouth, #diveast, #divwest, #divdine, #divdance, #divdrink{
 	display: none;
 	position: absolute;
 	text-align: left;

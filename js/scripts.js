@@ -1,3 +1,17 @@
+function format(arr) {
+	if (qArray.indexOf('dine') > -1) {
+		qArray.push('restaurant');
+	};
+	if (qArray.indexOf('dance') > -1) {
+		qArray.push('club nightclub');
+	};
+	if (qArray.indexOf('drink') > -1) {
+		qArray.push('bar dive cocktails');
+	};	
+};
+
+
+
 /* qArray is the array which holds the user's selections
 and will eventually be pushed to the Google Map API */
 
@@ -142,6 +156,7 @@ in such a way that they become the keywords of a search.
 $('#search').click(function (event) {
 	event.preventDefault();
 
+	format(qArray);
 	$('.hid').slideUp();
 	$('#map').delay(500).append('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=' +
 	qArray.join(' ') +
@@ -167,7 +182,7 @@ qArray is set back to its default contents.
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
 	 $('.btn-select').css('background-color', '#FFFFFF');
-	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #diveat, #map').delay(500).empty().css('color', 'gray');
+	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdine, #map').delay(500).empty().css('color', 'gray');
 	 $('#helpplay').hide().append('&nbsp;click <span class="glyphicon glyphicon-play" aria-hidden="true">');
 	 firstAlert();
 	 qArray = ['portland oregon'];
