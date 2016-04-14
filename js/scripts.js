@@ -8,9 +8,32 @@ function format(arr) {
 	if (qArray.indexOf('dance') > -1) {
 		qArray.push('club nightclub');
 	};
-	if (qArray.indexOf('drink') > -1) {
-		qArray.push('bar dive cocktails');
+	if ((qArray.indexOf('south') > -1) && (qArray.indexOf('west') > -1)) {
+		var sindex = qArray.indexOf('south');
+		var windex = qArray.indexOf('west');
+		qArray.splice(sindex, 1);
+		qArray.splice(windex, 1);
+		qArray.push('southwest downtown');
 	};
+	if ((qArray.indexOf('north') > -1) && (qArray.indexOf('east') > -1)) {
+		var nindex = qArray.indexOf('north');
+		var eindex = qArray.indexOf('east');
+		qArray.splice(nindex, 1);
+		qArray.splice(eindex, 1);
+		qArray.push('northeast');
+ };
+	 if ((qArray.indexOf('south') > -1) && (qArray.indexOf('east') > -1)) {
+		 var sindex = qArray.indexOf('south');
+		 var eindex = qArray.indexOf('east');
+		 qArray.splice(sindex, 1);
+		 qArray.splice(eindex, 1);
+		 qArray.push('southeast');
+	};
+	if (qArray.indexOf('west') > -1 ) {
+		var windex = qArray.indexOf('west');
+		qArray.splice(windex, 1);
+		qArray.push('west downtown pearl');
+ };
 };
 
 
@@ -184,7 +207,9 @@ qArray is set back to its default contents.
 	 $('.jumbotron').delay(1500).fadeIn(1000);
 	 $('.footer').delay(2000).fadeIn(1000);
 	 $('.btn-select').css('background-color', '#FFFFFF');
+	 $('.gray').css('background-color', '#C4C4C4');
 	 $('#divnorth, #divsouth, #diveast, #divwest, #divdrink, #divdance, #divdine, #map').delay(500).empty().css('color', 'gray');
+	 $('#helpplay').empty();
 	 $('#helpplay').hide().append('&nbsp;click <span class="glyphicon glyphicon-play" aria-hidden="true">');
 	 firstAlert();
 	 qArray = ['portland oregon'];

@@ -49,6 +49,9 @@ BUTTON STYLES
 	border-style: solid;
 }
 
+.gray {
+	background-color: #C4C4C4;
+}
 /*****************
 ROW STYLES
 *****************/
@@ -82,6 +85,7 @@ div #divnorth, #divsouth, #diveast, #divwest, #divdine, #divdance, #divdrink{
 	text-align: left;
 	color: gray;
 }
+
 
 #map {
 	margin-left: 7%;
