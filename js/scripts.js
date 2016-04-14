@@ -8,24 +8,28 @@ function format(arr) {
 	if (qArray.indexOf('dance') > -1) {
 		qArray.push('club nightclub');
 	};
+	if (qArray.indexOf('drink') > -1) {
+		qArray.push('bar cocktails');
+	};
+
 	if ((qArray.indexOf('south') > -1) && (qArray.indexOf('west') > -1)) {
 		var sindex = qArray.indexOf('south');
-		var windex = qArray.indexOf('west');
 		qArray.splice(sindex, 1);
+		var windex = qArray.indexOf('west');
 		qArray.splice(windex, 1);
 		qArray.push('southwest downtown');
 	};
 	if ((qArray.indexOf('north') > -1) && (qArray.indexOf('east') > -1)) {
 		var nindex = qArray.indexOf('north');
-		var eindex = qArray.indexOf('east');
 		qArray.splice(nindex, 1);
+		var eindex = qArray.indexOf('east');
 		qArray.splice(eindex, 1);
 		qArray.push('northeast');
  };
 	 if ((qArray.indexOf('south') > -1) && (qArray.indexOf('east') > -1)) {
 		 var sindex = qArray.indexOf('south');
-		 var eindex = qArray.indexOf('east');
 		 qArray.splice(sindex, 1);
+		 var eindex = qArray.indexOf('east');
 		 qArray.splice(eindex, 1);
 		 qArray.push('southeast');
 	};
