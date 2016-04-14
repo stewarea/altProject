@@ -14,7 +14,6 @@ function format(arr) {
 };
 
 
-
 /* qArray is the array which holds the user's selections
 and will eventually be pushed to the Google Map API */
 
