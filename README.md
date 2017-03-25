@@ -27,7 +27,7 @@ This is because there are conflicting cardinal directions, and in general, too m
 
 ## Support and contact details
 
-If there are any problems shoot me an e-mail: ebenewood@yahoo.com
+If there are any problems shoot me an e-mail: stewarea@gmail.com
 
 ## Technologies Used
 
