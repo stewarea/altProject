@@ -1,17 +1,17 @@
-####PDXNitelife
+##PDXNitelife
 
 Helps users find locations in Portland Oregon based on N S E W directions and a few selections
 
-####Date of Version:13/April/2016
+##Date of Version:13/April/2016
 
 Author:  stewarea,MH1989,patriciahall2,maizazul,~~ebenewood~~
 
-###Description
+##Description
 
 Icons representing the content they are affiliated with are clicked by the user in order to create an array
 which is then pushed to a Google Maps API that is centered (at times) on Portland Oregon.
 
-###Setup/Installation Requirements
+##Setup/Installation Requirements
 
 1.)Click play button.
 
